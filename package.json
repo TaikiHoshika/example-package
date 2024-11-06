@@ -1,5 +1,5 @@
 {
-  "name": "example-package",
+  "name": "@taikihoshika/example-package",
   "version": "1.0.0",
   "description": "A example package",
   "main": "src/index.ts",
@@ -11,5 +11,13 @@
   "devDependencies": {
     "@types/node": "^22.9.0",
     "typescript": "^5.6.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taikihoshika/example-package.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "private": true
 }
