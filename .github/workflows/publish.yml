@@ -21,7 +21,7 @@ jobs:
 
       - name: Setup Package Infomation
         run: |
-          node .github/workflows/setRepositoryUrl.ts package.json ${{ vars.REPOSITORY_URL }}
+          node .github/workflows/setPackageInfomation.ts package.json ${{ github.repository_owner }} ${{ vars.PACKAGE_NAME }} ${{ vars.REPOSITORY_URL }}
 
       - name: Publish Package
         run: npm publish
